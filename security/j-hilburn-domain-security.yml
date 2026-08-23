@@ -1,0 +1,30 @@
+generated: '2026-08-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts, plus hand-probed api.jhilburn.com and stylist.jhilburn.com
+  (2026-08-23)
+hosts:
+- host: jhilburn.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 31 09:06:15 2026 GMT
+  hsts: null
+- host: api.jhilburn.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Sep 29 13:24:54 2026 GMT
+  hsts: null
+  note: Live dedicated origin (Microsoft-IIS/8.5, X-Powered-By ASP.NET) that answers 403 at / and 404
+    on every documentation path probed. No HSTS header. Not fronted by the CDN that fronts jhilburn.com.
+- host: stylist.jhilburn.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Oct  7 14:32:28 2026 GMT
+  hsts: max-age=15552000
+  note: Stylist recruiting/training site. HSTS present without includeSubDomains or preload.
+domains:
+- domain: jhilburn.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

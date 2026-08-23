@@ -1,0 +1,43 @@
+# J.Hilburn
+
+> J.Hilburn is a Dallas, Texas based direct-to-consumer custom menswear brand founded in 2007. It
+> sells made-to-measure suits, shirts, trousers, polos and outerwear through a network of roughly
+> 1,000 independent personal stylists and a small number of studio spaces. J.Hilburn publishes no
+> public API, no developer portal and no machine-readable API description. This file is generated
+> by API Evangelist from the public J.Hilburn surface; it is not published by J.Hilburn.
+
+## About this file
+- Generated: 2026-08-23
+- Method: generated (from apis.yml and probed public surface — J.Hilburn serves no /llms.txt of its own; https://jhilburn.com/llms.txt returned HTTP 404 on 2026-08-23)
+- Source: https://github.com/api-evangelist/j-hilburn
+
+## Company
+- [J.Hilburn](https://jhilburn.com): Custom menswear storefront and product catalog. Served behind a Cloudflare bot challenge that answers HTTP 403 to non-browser clients.
+- [Terms of Use](https://jhilburn.com/termsandconditions): Site operated by J.Hilburn LLC.
+- [Privacy Policy](https://jhilburn.com/privacypolicy)
+- [GitHub organization](https://github.com/JHilburn): Exists, zero public repositories as of 2026-08-23.
+- [LinkedIn](https://www.linkedin.com/company/j-hilburn)
+
+## Stylist program
+- [J.Hilburn Stylist](https://stylist.jhilburn.com/): Recruiting and training site for independent stylists.
+- [About](https://stylist.jhilburn.com/about)
+- [Opportunity](https://stylist.jhilburn.com/opportunity)
+- [Training & Events](https://stylist.jhilburn.com/trainingandevents)
+- [Stylist privacy policy](https://stylist.jhilburn.com/privacy-policy)
+
+## Applications
+- [J.Hilburn Stylist (iOS)](https://apps.apple.com/us/app/j-hilburn-stylist/id6446250506): Stylist client, order and shopping app.
+- [J.Hilburn VMA (iOS)](https://apps.apple.com/us/app/j-hilburn-vma/id1556698799): Virtual Measuring App.
+- [App Store developer page](https://apps.apple.com/us/developer/j-hilburn/id1556698801)
+
+## API surface
+There is no public J.Hilburn API. Recorded for accuracy, not as an integration path:
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, WSDL, Protobuf, MCP server or A2A agent card was found on any J.Hilburn host.
+- `api.jhilburn.com` is a live, dedicated origin (Microsoft-IIS/8.5, ASP.NET) that returns HTTP 403 at `/` and HTTP 404 on every documentation path probed. It is an internal application backend, not a documented developer API.
+- `https://jhilburn.com/robots.txt` disallows `/*.asmx`, `/partials/*`, `/clientapi/*` and `/secure/clientapi/*`. Those private client endpoints are honored as disallowed and were not crawled.
+- No `/.well-known/` document is served on any J.Hilburn host.
+- No first-party client library exists on npm, PyPI, RubyGems, Packagist or NuGet.
+
+## Contact
+- Customer service: customerservice@jhilburn.com
+- Stylist support: stylistsuccess@jhilburn.com, 1-866-789-5381

@@ -1,0 +1,113 @@
+generated: '2026-08-23'
+method: probed
+source: direct HTTPS probes of /.well-known/* on every J.Hilburn host found (2026-08-23)
+note: No /.well-known document is served on any J.Hilburn host. Every path returned 404 (or a 500 from
+  the stylist site's catch-all handler). jhilburn.com itself sits behind a Cloudflare bot challenge that
+  answers 403 to our crawler on most requests, but /.well-known/* paths did return real 404 pages from
+  the origin before the challenge escalated. No WellKnown or SecurityTxt pointer is emitted in apis.yml,
+  because nothing was served.
+hosts:
+- host: jhilburn.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: api.jhilburn.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: stylist.jhilburn.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 500
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 500
+    file: null
+  - path: /.well-known/api-catalog
+    status: 500
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.jhstylist.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 500
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 500
+    file: null
+  - path: /.well-known/api-catalog
+    status: 500
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

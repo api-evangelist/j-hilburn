@@ -1,8 +1,18 @@
 aid: j-hilburn
 name: J Hilburn
-description: 'J Hilburn is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'J.Hilburn is a Dallas, Texas based direct-to-consumer custom menswear
+  brand founded in 2007. It designs and sells made-to-measure suits, shirts, trousers,
+  polos and outerwear through a network of roughly 1,000 independent personal stylists
+  and a small number of studio spaces rather than traditional retail stores. Its public
+  technology surface is consumer- and stylist-facing rather than developer-facing:
+  a catalog and checkout storefront at jhilburn.com, a stylist recruiting and training
+  site at stylist.jhilburn.com, and two iOS applications, J.Hilburn Stylist and J.Hilburn
+  VMA (Virtual Measuring App). J.Hilburn publishes no developer portal, no API reference
+  and no machine-readable API description; the only API surfaces evident from the public
+  web are private, undocumented internal endpoints that the company''s own robots.txt
+  disallows crawlers from reaching.'
 url: https://raw.githubusercontent.com/api-evangelist/j-hilburn/refs/heads/main/apis.yml
+image: https://avatars.githubusercontent.com/u/1018061?v=4
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +22,13 @@ created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Retail
+- Apparel
+- Fashion
+- Ecommerce
+- Direct to Consumer
+- Menswear
+- Custom Clothing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +37,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/j-hilburn_stock/
+  url: https://jhilburn.com
+- type: TermsOfService
+  url: https://jhilburn.com/termsandconditions
+- type: PrivacyPolicy
+  url: https://jhilburn.com/privacypolicy
+- type: GitHubOrganization
+  url: https://github.com/JHilburn
+- type: LinkedIn
+  url: https://www.linkedin.com/company/j-hilburn
+- type: DomainSecurity
+  url: security/j-hilburn-domain-security.yml
+- type: LLMsTxt
+  url: llms/j-hilburn-llms.txt
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    J.Hilburn sells custom clothing and ships only end-user software (two iOS stylist apps and a
+    web storefront); its own robots.txt discloses private /clientapi/ and *.asmx endpoints behind
+    a live IIS/ASP.NET origin at api.jhilburn.com, but there is no developer portal, no API
+    reference and no machine-readable description anywhere on its public surface.
+  evidence:
+    - url: https://jhilburn.com/robots.txt
+      status: 200
+    - url: https://api.jhilburn.com/
+      status: 403
+    - url: https://api.jhilburn.com/swagger/v1/swagger.json
+      status: 404
+    - url: https://jhilburn.com/.well-known/api-catalog
+      status: 404
+    - url: https://jhilburn.com/llms.txt
+      status: 404
+  checked: '2026-08-23'
